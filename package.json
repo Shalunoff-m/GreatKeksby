@@ -1,0 +1,8 @@
+{
+    "name": "Great Keksby teaching",
+    "version": "0.1.0",
+    "devDependencies": {
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0"
+    }
+}
