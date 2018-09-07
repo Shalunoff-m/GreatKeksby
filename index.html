@@ -6,33 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Великий Кексби! Главная страница</title>
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet">
     </head>
 
     <body>
 
         <!-- Здесь начинается хедер
 -->
-        <header class="pageBlock header">
-            <div class="pageBlock__wrapper">
-                <div class="header__row">
-                    <div class="header__logo header__item">
-                        <img src="/img/logo.png" alt="LOGO" width="205" height="55">
-                    </div>
-                    <nav class="header__item mainNavigation">
-                        <ul class="mainNavigation__links">
-                            <li class="mainNavigation__links-item"><a class="mainNavigation__link" href="#">Магазин</a></li>
-                            <li class="mainNavigation__links-item"><a class="mainNavigation__link" href="#">Каталог</a></li>
-                            <li class="mainNavigation__links-item"><a class="mainNavigation__link" href="#">Отзывы</a></li>
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__row show">
+                    <img class="header__element header__element--logo" src="img/logo.png" alt="LOGO" width="205" height="55">
+                    <nav class="header__element mainNavigation">
+                        <ul class="mainNavigation__list">
+                            <li class="mainNavigation__item"><a href="#" class="mainNavigation__link">Магазин</a></li>
+                            <li class="mainNavigation__item"><a href="#" class="mainNavigation__link">Каталог</a></li>
+                            <li class="mainNavigation__item"><a href="#" class="mainNavigation__link">Отзывы</a></li>
                         </ul>
                     </nav>
+                    <input class="header__element header__element--button button" type="button" value="Заказать">
 
-                    <div class="header__item header__button">
-                        <input type="button" value="Заказать" class="button">
-                    </div>
+
                 </div>
-
-                <h1 class=" header__slogan ">Аксессуары для котов <br> Коллекция FW15</h1>
+                <h1 class="">Аксессуары для котов <br> Коллекция FW15</h1>
             </div>
         </header>
 
