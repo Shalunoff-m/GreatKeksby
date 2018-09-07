@@ -3,6 +3,21 @@
     padding: 0;
 }
 
+// ---------Настройки шрифтов
+// Базовый шрифт
+%baseFont {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+// шрифт ссылок
+%linkFont {
+    @extend %baseFont;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 body {
     @extend .no-space;
 }
@@ -13,10 +28,14 @@ body {
 }
 
 .header {
+    // блок
     min-height: 525px;
     margin: 0;
     padding: 30px 0;
-    background-image: url("../img/header_back.jpg") no-repeat;
+    // шрифт
+    // оформление
+    background: url('../img/headerBack.jpg') no-repeat;
+    background-size: 100% auto;
 }
 
 .header__row {
@@ -24,10 +43,29 @@ body {
     justify-content: flex-start;
     align-items: center;
     height: 50px;
+    margin-bottom: 145px;
 }
 
 .mainNavigation__list {
     @extend .no-space;
+}
+
+.mainNavigation__link,
+.mainNavigation__link:visited {
+    @extend %linkFont;
+    position: relative;
+}
+
+.mainNavigation__link:hover {
+    text-decoration: underline;
+}
+
+.mainNavigation__link:hover::after {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 4px;
+    bottom: 100%;
 }
 
 .header__element--logo {
@@ -44,6 +82,15 @@ body {
     list-style: none;
     float: left;
     margin-right: 50px;
+}
+
+.header__slogan {
+    @extend %baseFont;
+    // Шрифт
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
 }
 
 .show * {
