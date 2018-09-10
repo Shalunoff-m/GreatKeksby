@@ -1,6 +1,14 @@
-.no-space, .mainNavigation__list, body {
+.advantages__text, .advantages__item, .mainNavigation__list, body {
   margin: 0;
   padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .header__slogan, .button, .mainNavigation__link,
@@ -8,6 +16,14 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 18px;
   color: white;
+}
+
+.advantages {
+  color: #404040;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .mainNavigation__link,
@@ -22,7 +38,8 @@
 }
 
 .header {
-  min-height: 525px;
+  min-width: 1020px;
+  height: 525px;
   margin: 0;
   padding: 30px 0;
   background: url("../img/headerBack.jpg") no-repeat;
@@ -81,14 +98,66 @@
 }
 
 .header__slogan {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-weight: bold;
+  color: white;
+  font-family: Georgia;
   font-size: 45px;
+  font-weight: 700;
+  line-height: 55px;
   text-align: center;
 }
 
 .show * {
   outline: 1px rgba(0, 238, 255, 0.2) solid;
+}
+
+.advantages {
+  display: block;
+  padding-top: 140px;
+  min-height: 295px;
+}
+
+.advantages__list {
+  list-style: none;
+}
+
+.advantages__text {
+  color: #a38b70;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.advantages__item {
+  display: block;
+  position: relative;
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+.advantages__item::before {
+  position: absolute;
+  top: -95px;
+  left: 50%;
+  display: block;
+  width: 75px;
+  height: 75px;
+  background: url("../img/advantages_1.png") no-repeat center center;
+  content: "";
+  transform: translateX(-50%);
+}
+
+.advantages__item--select::before {
+  background: url("../img/advantages_1.png") no-repeat center center;
+}
+
+.advantages__item--quality::before {
+  background: url("../img/advantages_2.png") no-repeat center center;
+}
+
+.advantages__item--secure::before {
+  background: url("../img/advantages_3.png") no-repeat center center;
 }
 
 /*# sourceMappingURL=style.css.map */
