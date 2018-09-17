@@ -4,5 +4,8 @@
     "devDependencies": {
         "grunt-contrib-sass": "^1.0.0",
         "grunt-contrib-watch": "^1.1.0"
+    },
+    "dependencies": {
+        "normalize.css": "^8.0.0"
     }
 }

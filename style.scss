@@ -34,11 +34,106 @@
     text-transform: uppercase;
 }
 
+.header-text {
+    @extend %no-space;
+    font-family: Georgia;
+    font-size: 45px;
+    font-weight: 700;
+    color: #a38b70;
+}
+
 body {
     @extend %no-space;
 }
 
-.wrapper {
+.section--dark {
+    background-color: #f2f2f2;
+}
+
+.story {
+    min-height: 620px;
+}
+
+.story__headergroup {
+    padding-bottom: 70px;
+    display: flex;
+    @extend %no-space;
+    // flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories__caption {
+    display: flex;
+    align-items: flex-end;
+}
+
+.stories__header {
+    @extend %no-space;
+    padding-right: 10px;
+    font-family: Arial;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.stories__photo {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+.stories__info {
+    @extend %no-space;
+    margin-left: 130px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    color: #404040;
+}
+
+.stories__author {
+    @extend %no-space;
+    font-family: Arial;
+    color: #666;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.linkOut {
+    position: relative;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #a38b70;
+}
+
+.linkOut::after {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    right: -15px;
+    background: url("../img/linkOut.png") center center no-repeat;
+    content: "";
+}
+
+.stories__text {
+    @extend %no-space;
+    padding-top: 15px;
+    padding-bottom: 65px;
+}
+
+.section {
+    box-sizing: border-box;
+    padding-top: 80px;
+}
+
+.section__wrapper {
     width: 1020px;
     // min-width: 1020px;
     margin: 0 auto;
@@ -64,6 +159,23 @@ body {
     margin-bottom: 145px;
 }
 
+.header__button {
+    margin-left: auto;
+}
+
+.mainNavigation {
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header__logo {
+    padding-right: 125px;
+}
+
 .mainNavigation__list {
     @extend %no-space;
 }
@@ -75,7 +187,7 @@ body {
 }
 
 .mainNavigation__link:hover {
-    border-bottom: 4px solid white;
+    border-bottom: 2px solid white;
     padding-bottom: 5px;
 }
 
@@ -87,6 +199,12 @@ body {
     display: block;
     background-color: transparent;
     border: 2px solid white;
+}
+
+.button--dark {
+    border: 2px solid #a38b70;
+    text-decoration: none;
+    color: #a38b70;
 }
 
 
@@ -131,9 +249,10 @@ body {
 
 .advantages {
     display: block;
-    padding-top: 140px;
-    min-height: 295px;
+    padding-top: 145px;
+    // min-height: 295px;
     @extend %fontParagraph;
+    overflow: auto;
 }
 
 .advantages__list {
@@ -141,11 +260,12 @@ body {
 }
 
 .advantages__text {
-    color: #a38b70;
+    padding-bottom: 30px;
     font-family: Georgia;
     font-size: 30px;
     font-weight: 700;
     line-height: 30px;
+    color: #a38b70;
 }
 
 .advantages__item {
@@ -175,6 +295,11 @@ body {
 }
 
 .advantages__text {
+    @extend %no-space;
+}
+
+.advantages__description {
+    padding-bottom: 65px;
     @extend %no-space;
 }
 
