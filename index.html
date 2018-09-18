@@ -58,10 +58,10 @@
       -->
         <section class="section section--dark story">
             <div class="section__wrapper">
-                <div class="story__headergroup">
-                    <h2 class="story__header header-text header-text--section">Немного теории</h2>
-                    <a class="story__link button button--dark" href="#">Справочник</a>
-                </div>
+
+                <a class="story__link button button--dark" href="#">Справочник</a>
+                <h2 class="story__header header-text header-text--section">Немного теории</h2>
+
                 <dl class="story__list stories">
                     <dt class="stories__caption">
             <h3 class="stories__header">Окрас кошек и котов</h3>
@@ -95,42 +95,54 @@
         </section>
         <section class="comments section">
             <div class="section__wrapper">
-                <h2 class="header-text">Довольные коты</h2>
-                <a href="# ">Все отзывы</a>
-                <div>
+                <a class="comments__button button button--dark" href="# ">Все отзывы</a>
+                <h2 class="header-text comments__header-text">Довольные коты</h2>
+                <div class="comments__item">
 
-                    <p>Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
+                    <p class="comments__text">Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)
                     </p>
-                    <cite>Барсик, г. Москва</cite>
+                    <cite class="comments_author">Барсик, г. Москва</cite>
 
                 </div>
-                <div>
+                <div class="comments__item">
 
-                    <p>Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!</p>
-                    <cite>Мурка, г. Санкт-Петербург</cite>
+                    <p class="comments__text">Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!</p>
+                    <cite class="comments_author">Мурка, г. Санкт-Петербург</cite>
                 </div>
             </div>
         </section>
 
         <!-- Популярные товары -->
-        <section class="popularGoods section">
+        <section class="popularGoods section section--dark">
             <div class="section__wrapper">
-                <h2 class="header-text">Популярные товары</h2>
-                <a href="# ">Каталог</a>
-                <div class="popularGoods__item ">
-                    <img src="# " alt="# ">
-                    <p>Очки «Классика жанра»</p>
-                    <p>300р.</p>
+                <a class=" popularGoods__button button button--dark" href="# ">Каталог</a>
+                <h2 class="popularGoods__header header-text">Популярные товары</h2>
+                <div class="popularGoods__item good">
+                    <img class="good__img" src="img/photo3.jpg" alt="#">
+                    <div class="good__info">
+                        <p class="good__price">300р.</p>
+                        <p class="good__name">Очки «Классика жанра»</p>
+                        <a href="#" class="good__buy">Описание</a>
+                        <a href="#" class="good__description">Купить</a>
+                    </div>
                 </div>
-                <div class="popularGoods__item ">
-                    <img src="# " alt="# ">
-                    <p>Очки «Жалюзи»</p>
-                    <p>400р.</p>
+                <div class="popularGoods__item good">
+                    <img class="good__img" src="img/photo4.jpg" alt="#">
+                    <div class="good__info">
+                        <p class="good__price ">400р.</p>
+                        <p class="good__name">Очки «Жалюзи»</p>
+                        <a href="#" class="good__buy">Описание</a>
+                        <a href="#" class="good__description">Купить</a>
+                    </div>
                 </div>
-                <div class="popularGoods__item ">
-                    <img src="# " alt="# ">
-                    <p>Очки «Классика жанра»</p>
-                    <p>500р.</p>
+                <div class="popularGoods__item popularGoods__item--last good">
+                    <img class="good__img " src="img/photo5.jpg" alt="#">
+                    <div class="good__info">
+                        <p class="good__price">500р.</p>
+                        <p class="good__name">Очки «Базилио»</p>
+                        <a href="#" class="good__description">Описание</a>
+                        <a href="#" class="good__buy">Купить</a>
+                    </div>
                 </div>
             </div>
         </section>

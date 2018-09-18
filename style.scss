@@ -50,17 +50,8 @@ body {
     background-color: #f2f2f2;
 }
 
-.story {
-    min-height: 620px;
-}
-
-.story__headergroup {
-    padding-bottom: 70px;
-    display: flex;
-    @extend %no-space;
-    // flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.story__link {
+    float: right;
 }
 
 .stories__caption {
@@ -91,6 +82,38 @@ body {
     font-weight: 200;
     line-height: 24px;
     color: #404040;
+}
+
+.comments__button {
+    float: right;
+}
+
+.comments__item {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    border-left: 2px solid #a38b70;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.comments__text {
+    @extend %no-space;
+    padding-bottom: 25px;
+    font-weight: lighter;
+    line-height: 24px;
+}
+
+.comments_author {
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.comments__header-text {
+    padding-bottom: 60px;
 }
 
 .stories__author {
@@ -130,7 +153,9 @@ body {
 
 .section {
     box-sizing: border-box;
-    padding-top: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: auto;
 }
 
 .section__wrapper {
@@ -313,4 +338,66 @@ body {
 
 .advantages__item--secure::before {
     background: url("../img/advantages_3.png") no-repeat center center;
+}
+
+.popularGoods__button {
+    float: right;
+}
+
+.popularGoods__header {
+    padding-bottom: 70px;
+}
+
+.popularGoods__item {
+    width: 30%;
+    float: left;
+    margin-right: 50px;
+}
+
+.good {
+    border: 1px solid #a38b70;
+    box-sizing: border-box;
+}
+
+.good__img {
+    width: 100%;
+    height: auto;
+}
+
+.good__name,
+.good__price {
+    @extend %no-space;
+}
+
+.good__name {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+}
+
+.popularGoods__item--last {
+    margin-right: 0;
+}
+
+.good__info {
+    @extend %no-space;
+    padding: 25px;
+}
+
+.good__price {
+    display: block;
+    float: right;
+    color: #404040;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.good__price::after {
+    display: table;
+    content: "";
+    clear: both;
 }
