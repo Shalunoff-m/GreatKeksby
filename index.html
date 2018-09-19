@@ -122,8 +122,8 @@
                     <div class="good__info">
                         <p class="good__price">300р.</p>
                         <p class="good__name">Очки «Классика жанра»</p>
-                        <a href="#" class="good__buy">Описание</a>
-                        <a href="#" class="good__description">Купить</a>
+                        <a href="#" class="good__buy button button--fill">Описание</a>
+                        <a href="#" class="good__description button button--fill">Купить</a>
                     </div>
                 </div>
                 <div class="popularGoods__item good">
@@ -131,8 +131,8 @@
                     <div class="good__info">
                         <p class="good__price ">400р.</p>
                         <p class="good__name">Очки «Жалюзи»</p>
-                        <a href="#" class="good__buy">Описание</a>
-                        <a href="#" class="good__description">Купить</a>
+                        <a href="#" class="good__buy button button--fill">Описание</a>
+                        <a href="#" class="good__description button button--fill">Купить</a>
                     </div>
                 </div>
                 <div class="popularGoods__item popularGoods__item--last good">
@@ -140,47 +140,47 @@
                     <div class="good__info">
                         <p class="good__price">500р.</p>
                         <p class="good__name">Очки «Базилио»</p>
-                        <a href="#" class="good__description">Описание</a>
-                        <a href="#" class="good__buy">Купить</a>
+                        <a href="#" class="good__description button button--fill">Описание</a>
+                        <a href="#" class="good__buy button button--fill">Купить</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Прайс-лист -->
-        <section class="section pricelist">
+        <section class="section section--dark pricelist">
             <div class="section__wrapper">
-                <h2 class="header-text">Прайс-лист на услуги</h2>
-                <table>
-                    <th>
-                        <td>№</td>
-                        <td>Название услуги</td>
-                        <td>Кто оказывает</td>
-                        <td>Сколько стоит</td>
-                    </th>
-                    <tr>
-                        <td>1.</td>
-                        <td>Стрижка</td>
-                        <td>Груммер</td>
-                        <td>500 руб</td>
+                <h2 class="header-text pricelist__header">Прайс-лист на услуги</h2>
+                <table class="pricelist__table pricesTable">
+                    <tr class="pricesTable__row pricesTable__row--headerRow">
+                        <th class="pricesTable__cell pricesTable__cell--header pricesTable__cell--shortWidth">№</th>
+                        <th class="pricesTable__cell pricesTable__cell--header">Название услуги</th>
+                        <th class="pricesTable__cell pricesTable__cell--header">Кто оказывает</th>
+                        <th class="pricesTable__cell pricesTable__cell--header">Сколько стоит</th>
                     </tr>
-                    <tr>
-                        <td>2.</td>
-                        <td>Заточка когтей</td>
-                        <td>Груммер</td>
-                        <td>300 руб</td>
+                    <tr class="pricesTable__row">
+                        <td class="pricesTable__cell pricesTable__cell--shortWidth">1.</td>
+                        <td class="pricesTable__cell pricesTable__cell--bold">Стрижка</td>
+                        <td class="pricesTable__cell">Груммер</td>
+                        <td class="pricesTable__cell">500 руб</td>
                     </tr>
-                    <tr>
-                        <td>3.</td>
-                        <td>Накрутка усов</td>
-                        <td>Груммер</td>
-                        <td>100 руб</td>
+                    <tr class="pricesTable__row">
+                        <td class="pricesTable__cell pricesTable__cell--shortWidth">2.</td>
+                        <td class="pricesTable__cell pricesTable__cell--bold">Заточка когтей</td>
+                        <td class="pricesTable__cell">Груммер</td>
+                        <td class="pricesTable__cell">300 руб</td>
                     </tr>
-                    <tr>
-                        <td>4.</td>
-                        <td>Подбор аксессуаров</td>
-                        <td>Груммер</td>
-                        <td>1500 руб</td>
+                    <tr class="pricesTable__row">
+                        <td class="pricesTable__cell pricesTable__cell--shortWidth">3.</td>
+                        <td class="pricesTable__cell pricesTable__cell--bold">Накрутка усов</td>
+                        <td class="pricesTable__cell">Груммер</td>
+                        <td class="pricesTable__cell">100 руб</td>
+                    </tr>
+                    <tr class="pricesTable__row">
+                        <td class="pricesTable__cell pricesTable__cell--shortWidth">4.</td>
+                        <td class="pricesTable__cell pricesTable__cell--bold">Подбор аксессуаров</td>
+                        <td class="pricesTable__cell">Груммер</td>
+                        <td class="pricesTable__cell">1500 руб</td>
                     </tr>
                 </table>
             </div>
@@ -190,36 +190,43 @@
         <!-- Блок вопросов -->
         <section class="questions section">
             <div class="section__wrapper">
-                <h2 class="header-text">Остались вопросы?</h2>
-                <p>Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
-                <form action="# " method="POST ">
-                    <p>
-                        <label for="firstName ">Представьтесь, пожалуйста:</label>
-                        <input type="text " id="firstName " name="firstname ">
-                    </p>
-                    <p>
-                        <label for="phone ">Контактный телефон:</label>
-                        <input type="text " id="phone " name="phone ">
-                    </p>
-                    <p>
-                        <label for="email ">Электронная почта:</label>
-                        <input type="text " id="email " name="email ">
-                    </p>
-                    <p>
-                        <input type="checkbox "> Я согласен получать СПАМ и смс на телефон.
-                    </p>
-                    <label for="themeGuestion ">Тема обращения:</label><br>
-                    <select name="themeGuestion " id="themeGuestion ">
-            <option value="delivery ">Условия доставки</option>
-            <option value="tech ">Вопрос по эксплуатации</option>
-          </select>
-                    <p>
-                        <label for="questionText ">Текст обращения:</label><br>
-                        <textarea id="questionText ">
+                <p class="questions__text">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+                <h2 class="header-text questions__header">Остались вопросы?</h2>
+                <form class="questions__form formData" action="# " method="POST ">
+
+                    <div class="questions__ColumnLeft">
+                        <label class="formData__label" for="firstName ">Представьтесь, пожалуйста:</label>
+                        <input class="formData__input" type="text " id="firstName " name="firstname " placeholder="Имя «Прозвище» Фамилия">
+
+
+                        <label class="formData__label" for="phone ">Контактный телефон:</label>
+                        <input class="formData__input" type="text " id="phone " name="phone" placeholder="8 (ХХХ) ХХХ-ХХ-ХХ">
+
+
+                        <label class="formData__label" for="email ">Электронная почта:</label>
+                        <input class="formData__input" type="text " id="email " name="email " placeholder="E-mail">
+
+                        <p class="formData__checkboxBlock">
+
+                            <input id="successMessage" type="checkbox" class="formData__checkbox">
+                            <label for="successMessage" class="formData__label formData__label--checkbox">Я согласен получать спам и смс на телефон</label>
+                        </p>
+
+                        <label class="formData__label" for="themeGuestion ">Тема обращения:</label><br>
+                        <select class="formData__input formData__select" name="themeGuestion " id="themeGuestion ">
+              <option value="delivery ">Условия доставки</option>
+              <option value="tech ">Вопрос по эксплуатации</option>
+            </select>
+
+                        <label class="formData__label" for="questionText ">Текст обращения:</label><br>
+                        <textarea class="formData__textarea" id="questionText ">
                           Введите текст вашего обращения
                       </textarea>
-                    </p>
-                    <input type="submit " value="Отправить ">
+                        <input type="submit " class="formData__button button button--fill" value="Отправить ">
+                    </div>
+                    <div class="questions__columnRight">
+                        <img src="img/writeMessage.jpg" alt="Мы ждем ваших сообщений!">
+                    </div>
 
                 </form>
             </div>

@@ -352,6 +352,7 @@ body {
     width: 30%;
     float: left;
     margin-right: 50px;
+    padding-bottom: 25px;
 }
 
 .good {
@@ -370,6 +371,7 @@ body {
 }
 
 .good__name {
+    padding-bottom: 24px;
     font-family: Arial;
     font-size: 16px;
     font-weight: 700;
@@ -396,8 +398,130 @@ body {
     line-height: 24px;
 }
 
-.good__price::after {
-    display: table;
-    content: "";
-    clear: both;
+.button--fill {
+    display: block;
+    padding: 15px 20px;
+    border: none;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #a38b70;
+    color: white;
+}
+
+.good__description {
+    float: left;
+}
+
+.good__buy {
+    float: right;
+}
+
+.pricelist {
+    margin-top: -60px;
+}
+
+.pricesTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricelist__header {
+    padding-bottom: 85px;
+}
+
+.pricesTable__cell {
+    padding: 20px;
+    border: 1px solid #a38b70;
+    color: black;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.pricesTable__cell--header {
+    border: none;
+    text-align: left;
+}
+
+.pricesTable__cell--shortWidth {
+    width: 20px;
+}
+
+.pricesTable__cell--bold {
+    font-weight: bold;
+}
+
+.questions__header {
+    padding-bottom: 70px;
+}
+
+.questions__text {
+    float: right;
+    line-height: 20px;
+    vertical-align: middle;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #404040;
+}
+
+.questions__columnRight {
+    display: block;
+    float: right;
+}
+
+.questions__ColumnLeft {
+    width: 630px;
+    float: left;
+}
+
+.formData__label {
+    display: block;
+    @extend %no-space;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    color: #404040;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.formData__input {
+    display: block;
+    border: 2px solid #d5d5d5;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    color: #404040;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.formData__checkbox {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.formData__label--checkbox {
+    display: inline;
+}
+
+.formData__checkboxBlock {
+    display: block;
+    padding-bottom: 30px;
+}
+
+.formData__select {
+    display: block;
+    padding: 20px;
+    background-color: none;
 }
