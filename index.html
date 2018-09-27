@@ -195,28 +195,39 @@
                 <form class="questions__form formData" action="# " method="POST ">
 
                     <div class="questions__ColumnLeft">
-                        <label class="formData__label" for="firstName ">Представьтесь, пожалуйста:</label>
-                        <input class="formData__input" type="text " id="firstName " name="firstname " placeholder="Имя «Прозвище» Фамилия">
+                        <div class="formData__element">
+                            <label class="formData__label" for="firstName ">Представьтесь, пожалуйста:</label>
+                            <input class="formData__input" type="text " id="firstName " name="firstname " placeholder="Имя «Прозвище» Фамилия">
+                        </div>
 
 
-                        <label class="formData__label" for="phone ">Контактный телефон:</label>
-                        <input class="formData__input" type="text " id="phone " name="phone" placeholder="8 (ХХХ) ХХХ-ХХ-ХХ">
+                        <div class="formData__groupElements">
+                            <div class="formData__element formData__element--halfsize">
+                                <label class="formData__label" for="phone ">Контактный телефон:</label>
+                                <input class="formData__input" type="text " id="phone " name="phone" placeholder="8 (ХХХ) ХХХ-ХХ-ХХ">
+                            </div>
 
 
-                        <label class="formData__label" for="email ">Электронная почта:</label>
-                        <input class="formData__input" type="text " id="email " name="email " placeholder="E-mail">
+                            <div class="formData__element formData__element--halfsize">
+                                <label class="formData__label" for="email ">Электронная почта:</label>
+                                <input class="formData__input" type="text " id="email " name="email " placeholder="E-mail">
+                            </div>
 
+                        </div>
                         <p class="formData__checkboxBlock">
 
-                            <input id="successMessage" type="checkbox" class="formData__checkbox">
+                            <input id="successMessage" type="checkbox" class="formData__checkbox visually-hidden">
                             <label for="successMessage" class="formData__label formData__label--checkbox">Я согласен получать спам и смс на телефон</label>
                         </p>
 
-                        <label class="formData__label" for="themeGuestion ">Тема обращения:</label><br>
-                        <select class="formData__input formData__select" name="themeGuestion " id="themeGuestion ">
-              <option value="delivery ">Условия доставки</option>
-              <option value="tech ">Вопрос по эксплуатации</option>
-            </select>
+                        <hr class="formData__element">
+                        <div class="formData__element">
+                            <label class="formData__label" for="themeGuestion ">Тема обращения:</label><br>
+                            <select class="formData__input formData__select" name="themeGuestion " id="themeGuestion ">
+                              <option class="formData__select-option" value="delivery">Условия доставки</option>
+                              <option class="formData__select-option" value="tech">Вопрос по эксплуатации</option>
+                            </select>
+                        </div>
 
                         <label class="formData__label" for="questionText ">Текст обращения:</label><br>
                         <textarea class="formData__textarea" id="questionText ">

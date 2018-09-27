@@ -477,7 +477,7 @@ body {
 }
 
 .questions__ColumnLeft {
-    width: 630px;
+    width: 680px;
     float: left;
 }
 
@@ -512,16 +512,59 @@ body {
 }
 
 .formData__label--checkbox {
-    display: inline;
+    // display: inline;
+    padding-left: 60px;
+}
+
+.formData__label--checkbox::before {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/checkbox_unckecked.png) center center no-repeat;
+    content: "";
+}
+
+.formData__checkbox:checked~.formData__label--checkbox::before {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/checkbox_ckecked.png) center center no-repeat;
+    content: "";
 }
 
 .formData__checkboxBlock {
     display: block;
-    padding-bottom: 30px;
+    position: relative;
 }
 
 .formData__select {
     display: block;
     padding: 20px;
     background-color: none;
+}
+
+.formData__select-option {
+    display: block;
+    padding: 20px;
+    background-color: none;
+}
+
+.formData__element {
+    width: auto;
+    padding-right: 50px;
+}
+
+.formData__element--halfsize {
+    width: 290px;
+    float: left;
+}
+
+.formData__groupElements {
+    overflow: auto;
 }
